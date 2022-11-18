@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Login | Final Project 2</title>
+    <link rel="stylesheet" href="../style/signin.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="icon" sizes="180x180" href="favicon-32x32.png" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">Login Form</div>
+      <form
+        id="form_login"
+        role="form"
+        onsubmit="signIn(event);"
+        autocomplete="off"
+      >
+        <div class="field">
+          <input type="email" name="email" id="login_email" required />
+          <label>Email Address</label>
+        </div>
+        <div class="field">
+          <input type="password" name="pwd" id="login_password" required />
+          <label>Password</label>
+        </div>
+        <div class="field">
+          <input type="submit" value="Login" />
+        </div>
+        <div class="signup-link">
+          Not a member? <a href="signup.html">Signup now</a>
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
